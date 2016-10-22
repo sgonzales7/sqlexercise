@@ -1,15 +1,11 @@
-// require http
+// 1) Require http
 
-// Function to print out message
+// 2) Connect to the API URL ( https://api.github.com/users/{username} )
 
-// Function to print out error messages
+// 3) Print out data if user is found
+        // a) profile image
+        // b) username
+        // c) public repo count
+        // d) followers count
 
-// Function to connect to the API URL ( https://api.github.com/users/{username} )
-
-// Read the data
-
-// Parse the data
-
-// Print the data
-
-// Output the Error
+// 4) Output the Error if user is not found
