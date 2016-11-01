@@ -5,3 +5,6 @@
 // Get the argument from the command line which will be called like--node app.js kamijean--the last part is the argument
 
 // Call to the profile function that will call the ajax function
+
+var profile = require('./profile');
+profile.get(url);
