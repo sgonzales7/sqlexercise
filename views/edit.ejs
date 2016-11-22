@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Gimmi Sugar</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+</head>
+<body>
+<ul>
+    <li id="name">
+        <a class="active"><%= name %></a>
+    </li>
+    <li>
+        <a><%= nav1%></a>
+    </li>
+    <li>
+        <a><%= nav2%></a>
+    </li>
+    <li>
+        <a><%= nav3%></a>
+    </li>
+</ul>
+
+<div id="container">
+    <div id="blogs">
+        <form action="/new" method="post">
+            <input type="text" name="name" placeholder ="enter name">
+            <input type="text" name="email" placeholder="enter email">
+            <textarea name="content" rows="8" cols="150" placeholder="What are you thinking?"></textarea>
+            <a><input type="submit" value="Submit"></a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

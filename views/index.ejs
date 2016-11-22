@@ -1,0 +1,47 @@
+
+<html>
+<head>
+    <title>Gimmi Sugar</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+</head>
+<body>
+<ul>
+    <li id="name">
+        <a class="active"><%= name %></a>
+    </li>
+    <li>
+        <a><%= nav1%></a>
+    </li>
+    <li>
+       <a href="/show"><%= nav2%></a>
+    </li>
+    <li>
+        <a><%= nav3%></a>
+    </li>
+</ul>
+
+<div id="container">
+    <div id="bcontainer">
+        <a href="/new"><button>Add More Sugar</button></a>
+    </div>
+    <div id="blogs">
+            <% data.forEach(function(post){ %>
+            <div id="titlecontainer">
+                <ul>
+                    <li id="name" href="/show"><h1><%= post.name %></h1></li>
+                    <li><a href='/posts/<%= post.id %>/edit'>Edit</a></li>
+                    <li><a href='/<% _METHOD:'DELETE' %>'>Delete</a></li>
+                </ul>
+            </div>
+            <div id="pcontainer">
+                <p><%= post.content %></p>
+            </div>
+            <div id="emailcontainer">
+                <p><%= post.email %></p>
+                <% }); %>
+            </div>
+    </div>
+</div>
+</body>
+</html>

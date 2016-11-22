@@ -1,0 +1,98 @@
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: whitesmoke;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    border-style: solid;
+    border-color: #FFB996;
+    font-family: 'Delius Unicase', cursive;
+}
+
+#name{
+    float: left;
+}
+
+li{
+    float: right;
+}
+
+li a {
+    display: block;
+    color: #FFB996;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#edit, #delete{
+    margin: 15px;
+    float: right;
+    height: 50px;
+    width: 150px;
+    border-style: solid;
+    border-color: #FFB996;
+    font-family: 'Delius Unicase', cursive;
+    background-color: white;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: gray;
+}
+
+#container{
+    border-style: solid;
+    border-color: #FFB996;
+    margin: 80px;
+    padding: 40px;
+}
+
+#bcontainer{
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-style: solid;
+    border-color: #FFB996;
+    font-family: 'Delius Unicase', cursive;
+    background-color: white;
+}
+
+#posts{
+    margin: 15px;
+    border-style: solid;
+    border-color: #FFB996;
+}
+
+#titlecontainer{
+    margin: 15px;
+}
+
+#pcontainer{
+    margin: 15px;
+    font-family: 'Delius Unicase', cursive;
+    text-align: left;
+}
+
+#emailcontainer{
+    margin: 15px;
+    font-family: 'Delius Unicase', cursive;
+    text-align: center;
+}
+
+h1{
+    display: block;
+    color: #FFB996;
+    text-align: center;
+    text-decoration: none;
+}
